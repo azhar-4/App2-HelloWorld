@@ -1,30 +1,58 @@
 <!DOCTYPE html> 
-<html> 
-	<!-- https://www.w3schools.com/w3css/default.asp -->
-   <head> 
-      <title>Hello World</title>  
+<html>
+   <!-- https://www.w3schools.com/w3css/default.asp -->
+   <head>
+      <title>Hello World</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
-   
-   <body> 
-
-     	<header class="w3-container w3-flat-carrot">
-		<h1>My Hello World App!</h1>
-	</header>
-
-	<div class="w3-container"><!-- place main content here and it will show up between header and footer.-->
-		
-		<p>Hello World! Azhar Virani is here!!! I'm so excited to be in Maker Space!!</p>		
-
-	</div><!-- /content -->
-	
-	<footer class="w3-bottom w3-container w3-flat-carrot">
-		<p>This is the footer!</p>
-	</footer>
-	   
+   </head>
+   <body>
+      <header class="w3-container w3-flat-carrot">
+         <h1>My Hello World App!</h1>
+      </header>
+      <div class="w3-container">
+         <!-- place main content here and it will show up between header and footer.-->
+         <p>Hello World! (Your name) is here.</p>
+         <a href="#two" class="w3-btn w3-black">yes</a>
+         <a href="#two" class="w3-btn w3-black">no</a>
+      </div>
+      <!-- /content -->
+      <footer class="w3-bottom w3-container w3-flat-carrot">
+         <p>This is the footer!</p>
+      </footer>
+      <style>	
+         .body {
+         margin: 0em;
+         }
+         .page {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: -100vw;
+         overflow-y: auto;
+         z-index: 0;
+         background-color: hsl(0,0%,100%);
+         }
+         .page:target {
+         left: 0vw;
+         z-index: 1;
+         }Do 
+      </style>
+      <script>
+         var allergy_count = 0;
+         var cold_count = 0; 
+         
+         function allergyAdd(){
+             allergy_count = allergy_count + 1;
+         }
+         
+         function coldAdd(){
+             cold_count = cold_count + 1;
+         }
+         resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+      </script>
    </body>
 </html>
-
